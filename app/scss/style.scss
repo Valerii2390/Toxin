@@ -1,0 +1,74 @@
+@import '_vars';
+@import '_global';
+@import '_fonts';
+//-----------------------------------------------------------------------------------------------------------
+//
+//                                                    START CODE
+//
+//-----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
+//
+//                                                    END CODE
+//
+//----------------------
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__list li {
+    display: inline-block;
+}
+
+.header__list li+li {
+    margin-left: 20px;
+}
+
+.header__link {
+    line-height: 17px;
+}
+
+.arrow-down {
+    position: relative;
+}
+
+.arrow-down:after {
+    content: '';
+    background-image: url(../images/arrow-down.svg);
+    position: absolute;
+    width: 24px;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: -2px;
+}
+
+.header__btns {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.header__signin {
+    color: #BC9CFF;
+    border: 2px solid #BC9CFF;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 22px;
+}
+
+.header__signup {
+    color: #fff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    padding: 10px 20px;
+}
+
+@import '_media';
